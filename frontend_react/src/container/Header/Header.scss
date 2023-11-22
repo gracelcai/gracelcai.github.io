@@ -1,6 +1,6 @@
 #home {
     position: relative;
-    background: url("../../assets/bgIMG.png");
+    // background: url("../../assets/black_bg.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: repeat;
@@ -21,7 +21,7 @@
     height: 100%;
     flex-direction: row;
   
-    padding: 6rem 2rem 0rem;
+    padding: 10rem 2rem 0rem;
   
     @media screen and (min-width: 2000px) {
       padding-top: 8rem;
@@ -55,10 +55,15 @@
   .app__header-badge {
     width: 100%;
     display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
+    justify-content: left;
+    align-items: start;
     flex-direction: column;
-  
+    
+    
+    h1 {
+        font-size: 2.75rem;
+        text-align: left;
+    }
     .badge-cmp,
     .tag-cmp {
       padding: 1rem 2rem;
@@ -76,9 +81,45 @@
   
       p {
         width: 100%;
-        text-transform: uppercase;
         text-align: right;
       }
+    }
+
+    .social-cmp {
+        flex-direction: row;
+        justify-content: space-between;
+        a {
+            color: var(--gray-color);
+            text-decoration: none;
+            font-size: 1rem;
+            font-weight: 500;
+            padding: 1rem 2rem;
+            margin: 2rem 0 1rem 1rem;
+            background: var(--white-color);
+            border-radius: 15px;
+            flex-direction: row;
+            width: auto;
+        
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    
+            transition: all 0.3s ease-in-out;
+    
+            &:hover {
+              color: var(--white-color);
+              background: var(--secondary-color);
+            }
+            img {
+                width: 1rem;
+                height: 1rem;
+            }
+
+            @media screen and (max-width: 1200px) {
+                width: 100%;
+                margin-left: 0rem;
+                margin-right: 1rem;
+            }
+            
+          }
     }
   
     span {
@@ -171,7 +212,7 @@
   }
   
   .app__header-img {
-    flex: 1;
+    flex: 0.65;
     height: 100%;
   
     display: flex;

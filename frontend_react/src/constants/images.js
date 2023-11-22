@@ -1,5 +1,7 @@
 import email from "../assets/email.png";
 import mobile from "../assets/mobile.png";
+import linkedin from "../assets/linkedin.png";
+import github from "../assets/github.png";
 import api from "../assets/api.png";
 import cpp from "../assets/cpp.png";
 import css from "../assets/css.png";
@@ -17,6 +19,7 @@ import redux from "../assets/redux.png";
 import sass from "../assets/sass.png";
 import typescript from "../assets/typescript.png";
 import vue from "../assets/vue.png";
+import tensorflow from "../assets/tensorflow.svg";
 
 import about01 from "../assets/about01.png";
 import about02 from "../assets/about02.png";
@@ -41,6 +44,8 @@ import gears from "../assets/gears.png";
 export default {
 	email,
 	mobile,
+	linkedin,
+	github,
 	api,
 	cpp,
 	css,
@@ -58,6 +63,7 @@ export default {
 	sass,
 	typescript,
 	vue,
+	tensorflow,
 	about01,
 	about02,
 	about03,
