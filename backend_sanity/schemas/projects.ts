@@ -21,7 +21,7 @@ export default {
             of: [{type: 'string'}]
         },
         {
-            name: 'imageurl',
+            name: 'image',
             title: 'Image',
             type: 'image',
             options: {

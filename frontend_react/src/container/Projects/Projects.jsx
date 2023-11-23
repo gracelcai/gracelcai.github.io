@@ -19,7 +19,21 @@ const Projects = () => {
 		});
 	}, []);
 
-	const handleProjectsFilter = (item) => {};
+	const handleProjectsFilter = (item) => {
+		setActiveFilter(item);
+		setAnimateCard([{ y: 100, opacity: 0 }]);
+
+		setTimeout(() => {
+			setAnimateCard([{ y: 0, opacity: 1 }]);
+			if (item === "All") {
+				setFilterProjects(projects);
+			} else {
+				setFilterProjects(
+					projects.filter((project) => project.tags.includes(item))
+				);
+			}
+		}, 500);
+	};
 	return (
 		<div className="app__projects">
 			<h2 className="head-text">
@@ -47,9 +61,9 @@ const Projects = () => {
 				{filterProjects.map((project, index) => (
 					<div className="app__projects-item app__flex" key={index}>
 						<div className="app__projects-img app__flex">
-							<img src={urlFor(project.imageurl).url()} alt={project.name} />
+							<img src={urlFor(project.image).url()} alt={project.name} />
 							<motion.div
-								className="app__projects-cover app__flex"
+								className="app__projects-hover app__flex"
 								whileHover={{ opacity: [0, 1] }}
 								transition={{
 									duration: 0.25,
@@ -72,7 +86,12 @@ const Projects = () => {
 									>
 										<AiFillEye />
 									</motion.div>
-
+								</a>
+								<a
+									href={project.github}
+									target="_blank"
+									rel="noopener noreferer"
+								>
 									<motion.div
 										className="app__flex"
 										whileInView={{ scale: [0, 1] }}
@@ -87,7 +106,7 @@ const Projects = () => {
 							</motion.div>
 						</div>
 
-						<div className="app_projects-content app__flex">
+						<div className="app__projects-content app__flex">
 							<h4 className="bold-text"> {project.name} </h4>
 							<p className="p-text" style={{ marginTop: 10 }}>
 								{" "}
@@ -95,7 +114,9 @@ const Projects = () => {
 							</p>
 
 							<div className="app__projects-tag app__flex">
-								<p className="p-text">{project.tags[0]}</p>
+								{project.tags && project.tags.length > 0 && (
+									<p className="p-text">{project.tags[0]}</p>
+								)}
 							</div>
 						</div>
 					</div>

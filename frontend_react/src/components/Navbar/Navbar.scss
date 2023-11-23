@@ -18,11 +18,11 @@
     justify-content: flex-start;
     align-items: center;
     img {
-        width: 200px;
-        height: 110px;
+        width: 100px;
+        height: 55px;
         @media screen and (min-width: 2000px) {
-            width: 400px;
-            height: 220px;
+            width: 150px;
+            height: 85px;
         }
     }
 }

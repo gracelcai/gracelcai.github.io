@@ -3,6 +3,7 @@ import "./Header.scss";
 import { motion } from "framer-motion";
 import { images } from "../../constants";
 import { AppWrap } from "../../wrapper";
+import { AiFillLinkedin, AiFillGithub } from "react-icons/ai";
 
 const scaleVariants = {
 	whileInView: {
@@ -44,6 +45,7 @@ const Header = () => {
 						>
 							{/* <img src={images.linkedin}/> */}
 							LinkedIn
+							<AiFillLinkedin className="icon" />
 						</a>
 						<a
 							href="https://github.com/gracelcai"
@@ -51,6 +53,7 @@ const Header = () => {
 							rel="noopener noreferrer"
 						>
 							GitHub
+							<AiFillGithub className="icon" />
 						</a>
 					</div>
 				</div>
