@@ -42,11 +42,11 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    height: 100%;
+    height: 80%;
   
-    margin: 0 2rem;
+    margin: 2rem 1rem;
   
-    @media screen and (max-width: 1200px) {
+    @media screen and (max-width: 800px) {
       width: 100%;
       margin-right: 0rem;
     }
@@ -94,7 +94,7 @@
             font-size: 1rem;
             font-weight: 500;
             padding: 1rem 2rem;
-            margin: 2rem 0 1rem 1rem;
+            margin: 2rem 1rem 1rem 0;
             background: var(--white-color);
             border-radius: 15px;
             flex-direction: row;
@@ -213,7 +213,7 @@
   
   .app__header-img {
     flex: 0.65;
-    height: 100%;
+    height: 60%;
   
     display: flex;
     justify-content: center;
@@ -223,7 +223,7 @@
    
   
     img {
-      width: 80%;
+      width: 60%;
       object-fit: contain;
       z-index: 1;
       justify-content: center;

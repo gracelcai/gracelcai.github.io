@@ -22,7 +22,7 @@ export default {
         },
         {
             name: 'imageurl',
-            title: 'ImgURL',
+            title: 'Image',
             type: 'image',
             options: {
                 hotspot: true
@@ -31,6 +31,12 @@ export default {
         {
             name: 'github',
             title: 'GitHub',
+            type: 'url',
+            initialValue: 'https://github.com/gracelcai'
+        },
+        {
+            name: 'projectLink',
+            title: 'Project Link',
             type: 'url',
             initialValue: 'https://github.com/gracelcai'
         },

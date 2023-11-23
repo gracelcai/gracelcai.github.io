@@ -5,6 +5,24 @@
     justify-content: center;
     align-items: center;
     text-align: center;
+
+    padding: 10rem 2rem 0rem;
+  
+    @media screen and (min-width: 2000px) {
+      padding-top: 8rem;
+    }
+  
+    @media screen and (max-width: 1200px) {
+      flex-direction: column;
+    }
+  
+    @media screen and (max-width: 450px) {
+      padding: 6rem 1rem 2rem;
+    }
+
+    .p {
+      font-size: 1.5rem;
+    }
   }
   
   .app__profiles {
@@ -37,27 +55,5 @@
       img {
         height: 320px;
       }
-    }
-  }
-
-  .big-text {
-    font-size: 1.5rem;
-    font-weight: 600;
-    text-align: center;
-    justify-content: center;
-    color: var(--black-color);
-    width: 60%;
-    margin: 1rem auto;
-  
-    span {
-      color: var(--secondary-color);
-    }
-  
-    @media screen and (min-width: 2000px) {
-      font-size: 4rem;
-    }
-  
-    @media screen and (max-width: 450px) {
-      font-size: 2rem;
     }
   }
