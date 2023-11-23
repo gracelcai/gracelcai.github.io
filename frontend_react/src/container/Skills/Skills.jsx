@@ -8,7 +8,7 @@ import { ReactTooltip } from "react-tooltip";
 const Skills = () => {
 	const [skills, setSkills] = useState([]);
 	useEffect(() => {
-		const query = '*[_type == "skills"]';
+		const query = '*[_type == "skills"] | order(rank asc)';
 		client.fetch(query).then((data) => {
 			setSkills(data);
 		});
@@ -26,8 +26,11 @@ const Skills = () => {
 					{skills
 						.filter((skill) => skill.type.includes("language"))
 						.map((item) => (
-							<div className="app__skills-item" key={item.name}>
-								<img src={urlFor(item.icon).url()} alt={item.name} />
+							<div className="app__skills-item app__flex">
+								<div className="app__flex" key={item.name}>
+									<img src={urlFor(item.icon).url()} alt={item.name} />
+								</div>
+								<p className="p-text">{item.name}</p>
 							</div>
 						))}
 				</div>
@@ -37,8 +40,11 @@ const Skills = () => {
 					{skills
 						.filter((skill) => skill.type.includes("framework"))
 						.map((item) => (
-							<div className="app__skills-item" key={item.name}>
-								<img src={urlFor(item.icon).url()} alt={item.name} />
+							<div className="app__skills-item app__flex">
+								<div className="app__flex" key={item.name}>
+									<img src={urlFor(item.icon).url()} alt={item.name} />
+								</div>
+								<p className="p-text">{item.name}</p>
 							</div>
 						))}
 				</div>
@@ -48,8 +54,11 @@ const Skills = () => {
 					{skills
 						.filter((skill) => skill.type.includes("library"))
 						.map((item) => (
-							<div className="app__skills-item" key={item.name}>
-								<img src={urlFor(item.icon).url()} alt={item.name} />
+							<div className="app__skills-item app__flex">
+								<div className="app__flex" key={item.name}>
+									<img src={urlFor(item.icon).url()} alt={item.name} />
+								</div>
+								<p className="p-text">{item.name}</p>
 							</div>
 						))}
 				</div>

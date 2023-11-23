@@ -18,19 +18,17 @@ const Navbar = () => {
 				<img src={images.logo} alt="logo" width={200} />
 			</div>
 			<ul className="app__navbar-links">
-				{["home", "about", "projects", "skills", "experience", "contact"].map(
-					(item) => (
-						<li
-							className={`app__navbar-links-item app__flex p-text ${
-								page === item ? "item-active" : ""
-							}`}
-							key={`<link-${item}`}
-							onClick={() => handlePage(item)}
-						>
-							<a href={`#${item}`}>{item}</a>
-						</li>
-					)
-				)}
+				{["home", "projects", "skills", "experience", "contact"].map((item) => (
+					<li
+						className={`app__navbar-links-item app__flex p-text ${
+							page === item ? "item-active" : ""
+						}`}
+						key={`<link-${item}`}
+						onClick={() => handlePage(item)}
+					>
+						<a href={`#${item}`}>{item}</a>
+					</li>
+				))}
 			</ul>
 
 			<div className="app__navbar-menu">
@@ -45,7 +43,7 @@ const Navbar = () => {
 						<ul>
 							{[
 								"home",
-								"about",
+								// "about",
 								"projects",
 								"skills",
 								"experience",

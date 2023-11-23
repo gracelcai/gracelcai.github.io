@@ -26,6 +26,11 @@ export default{
               hotspot: true,
             },
         },
+        {
+            name:'rank',
+            title:'Rank',
+            type:'number'
+        }
         
     ]
 }
