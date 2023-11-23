@@ -9,7 +9,7 @@ const Experience = () => {
 	const [experiences, setExperiences] = useState([]);
 
 	useEffect(() => {
-		const query = '*[_type == "experiences"]';
+		const query = '*[_type == "workExperience"]';
 
 		client.fetch(query).then((data) => {
 			setExperiences(data);
@@ -19,11 +19,11 @@ const Experience = () => {
 		<div className="app__skills-exp">
 			<h2 className="head-text">Experience</h2>
 			{experiences.map((experience) => (
-				<motion.div className="app__skills-exp-item" key={experience.year}>
+				<motion.div className="app__skills-exp-item" key={experience.startDate}>
 					<div className="app__skills-exp-year">
-						<p className="bold-text">{experience.year}</p>
+						<p className="bold-text">{experience.startDate}</p>
 					</div>
-					<motion.div className="app__skills-exp-works">
+					{/* <motion.div className="app__skills-exp-works">
 						{experience.works.map((work) => (
 							<>
 								<motion.div
@@ -34,11 +34,11 @@ const Experience = () => {
 									data-for={work.name}
 									key={work.name}
 								>
-									<h4 className="bold-text">{work.name}</h4>
+									<h4 className="bold-text">{work.role}</h4>
 									<p className="p-text">{work.company}</p>
 								</motion.div>
 								<Tooltip
-									id={work.name}
+									id={work.role}
 									effect="solid"
 									arrowColor="#fff"
 									className="skills-tooltip"
@@ -47,7 +47,7 @@ const Experience = () => {
 								</Tooltip>
 							</>
 						))}
-					</motion.div>
+					</motion.div> */}
 				</motion.div>
 			))}
 		</div>
