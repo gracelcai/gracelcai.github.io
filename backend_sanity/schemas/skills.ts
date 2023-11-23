@@ -9,6 +9,11 @@ export default{
             type:'string'
         },
         {
+            name:'type',
+            title:'Type',
+            type:'string'
+        },
+        {
             name:'bgColor',
             title:'BgColor',
             type:'string'
