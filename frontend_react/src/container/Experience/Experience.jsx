@@ -2,11 +2,13 @@ import React, { useState, useEffect } from "react";
 import "./Experience.scss";
 import { motion } from "framer-motion";
 import { Tooltip } from "react-tooltip";
+import { Chrono } from "react-chrono";
 
 import { AppWrap, MotionWrap } from "../../wrapper";
 import { urlFor, client } from "../../client";
 const Experience = () => {
 	const [experiences, setExperiences] = useState([]);
+	// const [items, setItems] = useState([])
 
 	useEffect(() => {
 		const query = '*[_type == "workExperience"]';
@@ -15,6 +17,14 @@ const Experience = () => {
 			setExperiences(data);
 		});
 	}, []);
+
+	const items = experiences.map((experience) => ({
+		title: `${experience.startDate} - ${experience.endDate}`,
+		cardTitle: experience.role,
+		cardSubtitle: experience.company,
+		cardDetailedText: experience.desc,
+		// date: experience.startDate,
+	}));
 	return (
 		<div className="app__skills-exp">
 			<h2 className="head-text">Experience</h2>
@@ -22,6 +32,9 @@ const Experience = () => {
 				<motion.div className="app__skills-exp-item" key={experience.startDate}>
 					<div className="app__skills-exp-year">
 						<p className="bold-text">{experience.startDate}</p>
+					</div>
+					<div style={{ width: "500px", height: "950px" }}>
+						<Chrono items={items} mode="VERTICAL_ALTERNATING" />
 					</div>
 					{/* <motion.div className="app__skills-exp-works">
 						{experience.works.map((work) => (

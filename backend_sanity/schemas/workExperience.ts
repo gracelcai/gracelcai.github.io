@@ -20,12 +20,18 @@ export default {
             {
                 name:'startDate',
                 title: 'Start Date',
-                type: 'date'
+                type: 'date',
+                options: {
+                    dateFormat: 'MMM, YYYY'
+                }
             },
             {
                 name:'endDate',
                 title: 'End Date',
-                type: 'date'
+                type: 'date',
+                options: {
+                    dateFormat: 'MMM, YYYY'
+                }
             }
     ]
 }
