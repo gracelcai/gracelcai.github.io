@@ -3,6 +3,9 @@ import "./Experience.scss";
 import { motion } from "framer-motion";
 import { Tooltip } from "react-tooltip";
 import { Chrono } from "react-chrono";
+import moment from "moment";
+import { format } from "date-fns";
+import { MdOutlineCardTravel } from "react-icons/md";
 
 import { AppWrap, MotionWrap } from "../../wrapper";
 import { urlFor, client } from "../../client";
@@ -11,7 +14,7 @@ const Experience = () => {
 	// const [items, setItems] = useState([])
 
 	useEffect(() => {
-		const query = '*[_type == "workExperience"]';
+		const query = '*[_type == "workExperience"] | order(startDate asc)';
 
 		client.fetch(query).then((data) => {
 			setExperiences(data);
@@ -19,50 +22,56 @@ const Experience = () => {
 	}, []);
 
 	const items = experiences.map((experience) => ({
-		title: `${experience.startDate} - ${experience.endDate}`,
+		title: `${format(new Date(experience.startDate), "MMM, yyyy")} - ${format(
+			new Date(experience.endDate),
+			"MMM, yyyy"
+		)}`,
 		cardTitle: experience.role,
 		cardSubtitle: experience.company,
 		cardDetailedText: experience.desc,
 		// date: experience.startDate,
 	}));
 	return (
-		<div className="app__skills-exp">
+		<div className="app__experience">
 			<h2 className="head-text">Experience</h2>
-			{experiences.map((experience) => (
-				<motion.div className="app__skills-exp-item" key={experience.startDate}>
-					<div className="app__skills-exp-year">
-						<p className="bold-text">{experience.startDate}</p>
-					</div>
-					<div style={{ width: "500px", height: "950px" }}>
-						<Chrono items={items} mode="VERTICAL_ALTERNATING" />
-					</div>
-					{/* <motion.div className="app__skills-exp-works">
-						{experience.works.map((work) => (
-							<>
-								<motion.div
-									whileInView={{ opacity: [0, 1] }}
-									transition={{ duration: 0.5 }}
-									className="app__skills-exp-work"
-									data-tip
-									data-for={work.name}
-									key={work.name}
-								>
-									<h4 className="bold-text">{work.role}</h4>
-									<p className="p-text">{work.company}</p>
-								</motion.div>
-								<Tooltip
-									id={work.role}
-									effect="solid"
-									arrowColor="#fff"
-									className="skills-tooltip"
-								>
-									{work.desc}
-								</Tooltip>
-							</>
-						))}
-					</motion.div> */}
-				</motion.div>
-			))}
+
+			<motion.div
+				animate={{ y: 0, opacity: 1 }}
+				transition={{ duration: 0.5, delayChildren: 0.5 }}
+				whileInView={{ x: [-100, 0], opacity: [0, 1] }}
+			>
+				{/* <p>hello</p> */}
+				<div style={{ width: "80%" }}>
+					<Chrono
+						items={items}
+						mode="VERTICAL_ALTERNATING"
+						theme={{
+							primary: "#948BFC",
+							secondary: "none",
+							cardBgColor: "white",
+							titleColor: "black",
+							titleColorActive: "black",
+						}}
+						// enableBreakPoint
+						// verticalBreakPoint={400}
+						hideControls={true}
+						disableClickOnCircle={true}
+						cardWidth={800}
+						fontSizes={{
+							cardSubtitle: "0.85rem",
+							cardText: "0.8rem",
+							cardTitle: "1rem",
+							title: "1rem",
+						}}
+					>
+						<div className="chrono-icons">
+							<MdOutlineCardTravel />
+							<MdOutlineCardTravel />
+							<MdOutlineCardTravel />
+						</div>
+					</Chrono>
+				</div>
+			</motion.div>
 		</div>
 	);
 };
