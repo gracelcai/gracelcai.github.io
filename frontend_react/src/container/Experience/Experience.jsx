@@ -41,7 +41,7 @@ const Experience = () => {
 				whileInView={{ x: [-100, 0], opacity: [0, 1] }}
 			>
 				{/* <p>hello</p> */}
-				<div style={{ width: "80%" }}>
+				<div className="app__experience-timeline">
 					<Chrono
 						items={items}
 						mode="VERTICAL_ALTERNATING"
@@ -63,17 +63,29 @@ const Experience = () => {
 							cardTitle: "1rem",
 							title: "1rem",
 						}}
+						classNames={{
+							card: "card",
+							cardMedia: "card-media",
+							cardSubTitle: "card-subtitle",
+							cardText: "card-text",
+							cardTitle: "card-title",
+							controls: "controls",
+							title: "title",
+						}}
 					>
-						<div className="chrono-icons">
+						{/* <div className="chrono-icons">
 							<MdOutlineCardTravel />
 							<MdOutlineCardTravel />
 							<MdOutlineCardTravel />
-						</div>
+						</div> */}
 					</Chrono>
 				</div>
 			</motion.div>
 		</div>
 	);
 };
-
-export default AppWrap(Experience, "experience");
+export default AppWrap(
+	MotionWrap(Experience, "app__experience"),
+	"experience",
+	"app__primarybg"
+);
