@@ -1,6 +1,6 @@
 import React from "react";
 import {
-	About,
+	// About,
 	Experience,
 	Footer,
 	Header,
