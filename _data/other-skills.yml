@@ -1,7 +1,11 @@
+- name: LaTeX
+  percentage: 90
+  color: info
+
 - name: Adobe Photoshop
-  percentage: 95
+  percentage: 80
   color: info
 
 - name: Adobe Illustrator
-  percentage: 90
-  color: success
+  percentage: 70
+  color: info

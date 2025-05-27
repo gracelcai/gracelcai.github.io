@@ -1,17 +1,11 @@
-- title: Student, Harvard CS
-  from: 2014
-  to: 2018
-  description: Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-               sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-               Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-               nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-               reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+- title: Software Engineering Intern, Uber
+  from: May 2024
+  to: August 2024
+  description: Utilized Python, Streamlit, and LangChain to build a proof-of-concept tool that summarizes documents. Collaborated with architects and engineers to write and evaluate LLM prompts in Michelangelo (internal ML platform). Integrated summarization functionality into internal document review platform using Go and React with TypeScript.
 
-- title: Software Engineer, Google, UK
-  from: 2018
-  to: present
-  description: Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-               sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-               Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-               nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-               reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+- title: Instructor, Code For Fun
+  from: June 2023
+  to: August 2023
+  description: Taught 120+ elementary school students coding in Scratch through summer camps. Guided students in brainstorming, designing, and coding their own games. Organized games and activities for students during break and lunch. Maintained laptops, tablets, and other teaching materials.
+
+
