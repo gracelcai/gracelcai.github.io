@@ -1,7 +1,7 @@
 ---
 name: Weapon Watch
 tools: [Python, PyTorch, React, Expo]
-image: 
+image: https://github.com/gracelcai/gracelcai.github.io/blob/portfolio/assets/ww-logo.png?raw=true
 description: AI-powered weapon detection and notification system for solution for xFoundry@UMD’s school safety startup competition
 ---
 
