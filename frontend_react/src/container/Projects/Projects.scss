@@ -187,5 +187,25 @@
         background-color: #fff;
         top: -25px;
       }
+
+    .app__projects-techstack {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      margin-top: 0.5rem;
+
+      span {
+        padding: 0.25rem 0.75rem;
+        border-radius: 999px;
+        background-color: var(--secondary-color);
+        margin: 0.25rem;
+        font-size: 0.875rem;
+        color: var(--white-color);
+        font-weight: 500;
+        box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+        transition: background 0.2s;
+      }
+    }
 }
 

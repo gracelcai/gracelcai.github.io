@@ -37,9 +37,10 @@ const Projects = () => {
 	return (
 		<div className="app__projects">
 			<h2 className="head-text">
-				My <span>Projects</span>
+				My Projects
 			</h2>
-			<div className="app__projects-filter">
+			<div style={{ height: "32px" }} />
+			{/* <div className="app__projects-filter">
 				{["Web App", "Mobile App", "All"].map((item, index) => (
 					<div
 						key={index}
@@ -51,7 +52,7 @@ const Projects = () => {
 						{item}
 					</div>
 				))}
-			</div>
+			</div> */}
 
 			<motion.div
 				animate={animateCard}
@@ -113,11 +114,21 @@ const Projects = () => {
 								{project.description}
 							</p>
 
-							<div className="app__projects-tag app__flex">
+							{project.techstack && project.techstack.length > 0 && (
+								<ul className="app__projects-techstack">
+									{project.techstack.map((tech, index) => (
+										<li key={index} className="p-text">
+											{tech}
+										</li>
+									))}
+								</ul>
+							)}
+
+							{/* <div className="app__projects-tag app__flex">
 								{project.tags && project.tags.length > 0 && (
 									<p className="p-text">{project.tags[0]}</p>
 								)}
-							</div>
+							</div> */}
 						</div>
 					</div>
 				))}

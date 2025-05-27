@@ -18,7 +18,7 @@ const Navbar = () => {
 				<img src={images.logo} alt="logo" width={200} />
 			</div>
 			<ul className="app__navbar-links">
-				{["home", "projects", "skills", "experience", "contact"].map((item) => (
+				{["home", "projects", "skills", "experience"].map((item) => (
 					<li
 						className={`app__navbar-links-item app__flex p-text ${
 							page === item ? "item-active" : ""
@@ -29,6 +29,15 @@ const Navbar = () => {
 						<a href={`#${item}`}>{item}</a>
 					</li>
 				))}
+				<li className="app__navbar-links-item app__flex p-text">
+					<a
+						href="https://drive.google.com/file/d/14arywDJBEF_tHVYfgDPGc9keKOzxePPW/view?usp=sharing"
+						target="_blank"
+						rel="noopener noreferrer"
+					>
+						Resume
+					</a>
+				</li>
 			</ul>
 
 			<div className="app__navbar-menu">
@@ -47,7 +56,7 @@ const Navbar = () => {
 								"projects",
 								"skills",
 								"experience",
-								"contact",
+								// "resume",
 							].map((item) => (
 								<li key={item}>
 									<a href={`#${item}`} onClick={() => setToggle(false)}>
@@ -55,6 +64,16 @@ const Navbar = () => {
 									</a>
 								</li>
 							))}
+							<li>
+								<a
+									href="https://drive.google.com/file/d/14arywDJBEF_tHVYfgDPGc9keKOzxePPW/view?usp=sharing"
+									target="_blank"
+									rel="noopener noreferrer"
+									onClick={() => setToggle(false)}
+								>
+									Resume
+								</a>
+							</li>
 						</ul>
 					</motion.div>
 				)}
