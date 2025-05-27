@@ -23,7 +23,7 @@ nav_exclude:                                            # The following paths ar
 ### Author Info ###
 author:
   name              : Grace Cai
-  image             : https://raw.githubusercontent.com/gracelcai/gracelcai.github.io/main/assets/profile.jpg
+  image             : https://github.com/gracelcai/gracelcai.github.io/blob/portfolio/assets/xfoundry-profile.jpg?raw=true
   email             : grace.cai7@gmail.com
   github            : gracelcai
 # gitlab            : your_username
