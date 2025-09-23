@@ -6,18 +6,18 @@
   percentage: 90
   color: info
 
+- name: Go
+  percentage: 80
+  color: info
+
+- name: TypeScript
+  percentage: 75
+  color: info
+
 - name: C
   percentage: 70
   color: info
 
-- name: JavaScript
-  percentage: 65
-  color: info
-
 - name: C++
-  percentage: 50
-  color: info
-
-- name: Go
   percentage: 50
   color: info

@@ -1,3 +1,13 @@
+- title: Undergraduate Researcher, University of Maryland
+  from: May 2025
+  to: Present
+  description: Designed a general physics-based model of micro-mobility vehicles (MMVs) such as bicycles, scooters, and skateboards. Developed a simulator with Three.js to model MMVs with customizable parameters and wheel arrangements. Applying general micro-mobility model to simulate multi-agent interactions for robotics and autonomous vehicle training.
+  
+- title: Software Engineering Intern, Uber
+  from: June 2025
+  to: August 2025
+  description: Implemented multimodal support in Go and Python for internal privacy risk and triage tool, increasing recall by 25%. Extended benchmarking suite to assess accuracy improvement and collaborated with stakeholders to design rollout plan. Built multimodal RAG pipeline to ingest and retrieve images using VectorDB.
+
 - title: Software Engineering Intern, Uber
   from: May 2024
   to: August 2024
