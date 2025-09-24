@@ -1,19 +1,23 @@
 - title: Undergraduate Researcher, University of Maryland
+  location: College Park, MD
   from: May 2025
   to: Present
-  description: Designed a general physics-based model of micro-mobility vehicles (MMVs) such as bicycles, scooters, and skateboards. Developed a simulator with Three.js to model MMVs with customizable parameters and wheel arrangements. Applying general micro-mobility model to simulate multi-agent interactions for robotics and autonomous vehicle training.
+  description: Designed a general physics-based model of micro-mobility vehicles (MMVs) such as bicycles, scooters, and skateboards. Developed a simulator with Three.js to model MMVs with customizable parameters and wheel arrangements. Applying general micro-mobility model to simulate multi-agent interactions for robotics and autonomous vehicle training. [View preprint (PDF)](/assets/4230_MS.pdf)
   
 - title: Software Engineering Intern, Uber
+  location: San Francisco, CA
   from: June 2025
   to: August 2025
   description: Implemented multimodal support in Go and Python for internal privacy risk and triage tool, increasing recall by 25%. Extended benchmarking suite to assess accuracy improvement and collaborated with stakeholders to design rollout plan. Built multimodal RAG pipeline to ingest and retrieve images using VectorDB.
 
 - title: Software Engineering Intern, Uber
+  location: San Francisco, CA
   from: May 2024
   to: August 2024
   description: Utilized Python, Streamlit, and LangChain to build a proof-of-concept tool that summarizes documents. Collaborated with architects and engineers to write and evaluate LLM prompts in Michelangelo (internal ML platform). Integrated summarization functionality into internal document review platform using Go and React with TypeScript.
 
 - title: Instructor, Code For Fun
+  location: Sunnyvale, CA
   from: June 2023
   to: August 2023
   description: Taught 120+ elementary school students coding in Scratch through summer camps. Guided students in brainstorming, designing, and coding their own games. Organized games and activities for students during break and lunch. Maintained laptops, tablets, and other teaching materials.

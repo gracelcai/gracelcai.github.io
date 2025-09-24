@@ -21,12 +21,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Finalist in xFoundry@UMD&#39;s School Safety Competition">
-  <meta property="og:description" content="My team made it to finals!">
-  <meta property="og:image" content="/assets/professional.jpeg">
+  <meta property="og:title" content="General Micro-Mobility Model">
+  <meta property="og:description" content="A general physics-based model of micro-mobility vehicles (MMVs) such as bicycles, scooters, and skateboards">
+  <meta property="og:image" content="/assets/gm3-types.png">
 
-  <title>Finalist in xFoundry@UMD&#39;s School Safety Competition</title>
-  <meta name="description" content="My team made it to finals!">
+  <title>General Micro-Mobility Model</title>
+  <meta name="description" content="A general physics-based model of micro-mobility vehicles (MMVs) such as bicycles, scooters, and skateboards">
 
   <link rel="shortcut icon" type="image/x-icon" href="/assets/favicon.ico">
 
@@ -60,9 +60,9 @@
   </button>
 
   <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-    <div class="navbar-nav ml-auto"><a class="nav-item nav-link " href="/projects/">Projects</a>
+    <div class="navbar-nav ml-auto"><a class="nav-item nav-link active" href="/projects/">Projects</a>
 
-      <a class="nav-item nav-link active" href="/blog/">Blog</a>
+      <a class="nav-item nav-link " href="/blog/">Blog</a>
 
       <a class="nav-item nav-link " href="/assets/resume.pdf"target="_blank">Resume</a>
 
@@ -74,16 +74,36 @@
 
 </nav>
     <div class="col-lg-10 mx-auto mt-5 markdown-body">
-  <h1><b>Finalist in xFoundry@UMD's School Safety Competition</b></h1>
+  <h1 id="general-micro-mobility-model">General Micro-Mobility Model</h1>
 
-<p class="post-metadata text-muted">
-  11 September 2025 -  
-  <b>less than 1 min read time</b>
+<p>Abstract: Modeling the dynamics of micro-mobility vehicles (MMV) is
+becoming increasingly important for training autonomous
+vehicle systems and building urban traffic simulations.
+However, mainstream tools rely on variants of the Kinematic
+Bicycle Model (KBM) or mode-specific physics that miss tire
+slip, load transfer, and rider/vehicle lean. To our
+knowledge, no unified, physics-based model captures these
+dynamics across the full range of common MMVs and wheel
+layouts. We propose the “Generalized Micro-mobility Model”
+(GM3), a tire-level formulation based on the tire brush
+representation that supports arbitrary wheel
+configurations, including single/double track and
+multi-wheel platforms. We introduce an interactive
+model-agnostic simulation framework that decouples
+vehicle/layout specification from dynamics to compare the
+GM3 with the KBM and other models, consisting of fixed step
+RK4 integration, human-in-the-loop and scripted control,
+real-time trajectory traces and logging for analysis. We
+also empirically validate the GM3 on the Stanford Drone
+Dataset’s deathCircle (roundabout) scene for biker, skater,
+and cart classes.</p>
 
-  <br></p>
+<p><a href="/assets/4230_MS.pdf">View Full Paper (preprint, under submission)</a></p>
 
-
-
+<!-- <video controls width="100%">
+  <source src="/assets/GM3-video.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video> -->
 
 
 </div>
