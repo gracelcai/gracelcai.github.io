@@ -2,7 +2,7 @@
   location: College Park, MD
   from: May 2025
   to: Present
-  description: Designed a general physics-based model of micro-mobility vehicles (MMVs) such as bicycles, scooters, and skateboards. Developed a simulator with Three.js to model MMVs with customizable parameters and wheel arrangements. Applying general micro-mobility model to simulate multi-agent interactions for robotics and autonomous vehicle training. [View preprint (PDF)](/assets/4230_MS.pdf)
+  description: Designed a general physics-based model of micro-mobility vehicles (MMVs) such as bicycles, scooters, and skateboards. Developed a simulator with Three.js to model MMVs with customizable parameters and wheel arrangements. Applying general micro-mobility model to simulate multi-agent interactions for robotics and autonomous vehicle training. [View preprint (PDF)](/assets/preprint.pdf)
   
 - title: Software Engineering Intern, Uber
   location: San Francisco, CA
