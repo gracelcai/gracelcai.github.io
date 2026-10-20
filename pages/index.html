@@ -1,0 +1,61 @@
+---
+layout: default
+title: Grace Cai
+permalink: /
+---
+<div class="research-home col-lg-10 mx-auto mt-5">
+
+<section id="about" class="row align-items-start">
+    <div class="col-md-4 col-lg-3 text-center mb-4 mb-md-0 pt-md-3">
+        <img class="profile-photo" src="{{ site.author.image | relative_url }}" alt="{{ site.author.name }}" />
+    </div>
+    <div class="col-md-8 col-lg-9">
+        <h1 class="home-name">Grace Cai</h1>
+        <p class="home-role text-muted">M.S. Student in Computer Science &middot; University of Maryland, College Park</p>
+
+        <p>I am an M.S. student in Computer Science at the <a href="https://www.cs.umd.edu/" target="_blank" rel="noopener">University of Maryland, College Park</a>, where I also received B.S. degrees in Computer Science (with High Honors) and Physics. I am advised by <a href="https://www.cs.umd.edu/~lin/" target="_blank" rel="noopener">Prof. Ming C. Lin</a> in the <a href="https://gamma.umd.edu/" target="_blank" rel="noopener">GAMMA Lab</a>, where I work on physics-based and differentiable dynamics models of micro-mobility vehicles for simulation and autonomous navigation.</p>
+
+        <p>My research interests lie at the intersection of <b>physically-based simulation</b>, <b>differentiable programming</b>, and <b>robotics</b>. I am interested in building models of the physical world that are faithful enough to capture real dynamics and differentiable enough to be used directly for learning, planning, and control of autonomous systems.</p>
+
+        <p>Previously, I was a World Model Systems Engineering Intern on the Autonomous Vehicles team at <b>NVIDIA</b>, where I studied how sensor degradation affects obstacle perception, and a Software Engineering Intern at <b>Uber</b>. Outside of research, I enjoy golf and baking.</p>
+
+        <p class="phd-callout">I am applying to Computer Science Ph.D. programs for Fall 2027.</p>
+
+        <p class="home-links">
+            <a href="mailto:{{ site.author.email }}"><i class="fas fa-envelope"></i> Email</a>
+            <a href="{{ '/assets/cv.pdf' | relative_url }}" target="_blank" rel="noopener"><i class="fas fa-file-alt"></i> CV</a>
+            <a href="https://scholar.google.com/citations?user=0Too9swAAAAJ&amp;hl=en" target="_blank" rel="noopener"><i class="fas fa-graduation-cap"></i> Google Scholar</a>
+            <a href="https://github.com/{{ site.author.github }}" target="_blank" rel="noopener"><i class="fab fa-github"></i> GitHub</a>
+            <a href="https://www.linkedin.com/in/{{ site.author.linkedin }}/" target="_blank" rel="noopener"><i class="fab fa-linkedin"></i> LinkedIn</a>
+        </p>
+    </div>
+</section>
+
+{% include research/publications.html %}
+
+<section id="experience" class="research-section">
+    <h2 class="section-title">Work Experience</h2>
+    {% for item in site.data.timeline %}
+    <div class="cv-item">
+        <div class="cv-item-head">
+            <span class="cv-item-title">{{ item.title }}</span>, <span class="cv-item-org">{{ item.org }}</span>
+            <span class="cv-item-date text-muted">{{ item.from }} &ndash; {{ item.to }}</span>
+        </div>
+        <div class="cv-item-desc">{{ item.description | markdownify }}</div>
+    </div>
+    {% endfor %}
+</section>
+
+
+<section id="awards" class="research-section">
+    <h2 class="section-title">Honors &amp; Awards</h2>
+    <ul class="awards-list">
+        <li><span>Computing Research Association (CRA) Outstanding Undergraduate Researcher Award, Honorable Mention</span><span class="text-muted">2026</span></li>
+        <li><span>Excellence in Research Award, University of Maryland</span><span class="text-muted">2026</span></li>
+        <li><span>CS Departmental Honors, University of Maryland</span><span class="text-muted">2023&ndash;2026</span></li>
+        <li><span>President's Scholarship, University of Maryland</span><span class="text-muted">2023&ndash;2026</span></li>
+        <li><span>Dean's List, University of Maryland</span><span class="text-muted">2023&ndash;2026</span></li>
+    </ul>
+</section>
+
+</div>

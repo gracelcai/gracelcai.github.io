@@ -1,7 +1,7 @@
 ### Site Settings ###
 title               : Grace Cai
 description         : >-
-                      I am a Computer Science and Physics student at the University of Maryland, College Park. 
+                      M.S. student in Computer Science at the University of Maryland, College Park, researching physics-based and differentiable simulation for robotics. Applying to CS Ph.D. programs for Fall 2027.
 baseurl             : ""            # Change to empty quotes if you are hosting your site at <your-username>.github.io directly
 repository          : gracelcai/gracelcai.github.io      # Change to <your-username>/<your-username>.github.io (or remove it if you don't need remote projects)
 remote_theme        : yousinix/portfolYOU
@@ -17,7 +17,7 @@ plugins:
 nav_exclude:                                            # The following paths are excluded from navbar
   - pages/tags.html
   - pages/404.html
-  - pages/index.md
+  - pages/index.html
 
 
 ### Author Info ###

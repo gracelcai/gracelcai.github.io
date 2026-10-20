@@ -1,0 +1,85 @@
+# Publications, most recent first.
+# Authors: "me: true" bolds the name; "equal: true" adds an equal-contribution asterisk.
+
+- title: "Differentiable Dynamics for Autonomous Micro-Mobility Navigation"
+  authors:
+    - name: Grace Cai
+      me: true
+    - name: Joey Lee
+      url: https://www.linkedin.com/in/joey-lee-a08842201/
+    - name: Nithin Parepally
+      url: https://www.linkedin.com/in/nithin-parepally-48b40a242/
+    - name: Laura Zheng
+      url: https://laurayuzheng.github.io/
+    - name: Ming C. Lin
+      url: https://www.cs.umd.edu/~lin/
+  venue: IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)
+  venue_short: IROS 2026
+  year: 2026
+  image: /assets/images/pubs/diffgm3.jpg
+  links:
+    - name: Project Page
+      url: https://gm3-sim.github.io/diffgm3/
+    - name: Paper
+      url: https://gm3-sim.github.io/diffgm3/DiffGM3_Paper.pdf
+    - name: Poster
+      url: /assets/papers/diffgm3_poster.pdf
+  abstract: >-
+    Autonomous micro-mobility vehicles (MMVs) such as wheelchairs, scooters, and bicycles have the potential to
+    improve mobility access and support safe low-speed transportation in pedestrian-shared spaces. Achieving MMV
+    autonomy will require realistic, predictable MMV motion. However, many existing autonomous vehicle stacks rely
+    on simplified kinematic models that fail to capture key MMV characteristics such as tire slip, friction, and
+    wheel layouts, limiting realism and gradient-based optimization. In this paper, we explore differentiable
+    formulations of dynamics models for autonomous micro-mobility systems. We first construct DiffKBM, a
+    differentiable version of the classical kinematic bicycle model (KBM). Then, we introduce DiffGM3, a
+    differentiable formulation of the General Micro-Mobility Model (GM3), a unified tire-based dynamics formulation
+    for micro-mobility vehicles that supports a wide range of MMV configurations. DiffKBM and DiffGM3 enable
+    end-to-end differentiable optimization through MMV dynamics, making them suitable for integration into
+    differentiable autonomy stacks. We evaluate these dynamics models in both open-loop and closed-loop settings:
+    (1) open-loop trajectory matching, where DiffKBM and DiffGM3 are integrated as a dynamics layer within DiffStack
+    and optimized to reproduce real-world MMV trajectories, and (2) closed-loop autonomous navigation, where DiffKBM
+    and DiffGM3 are paired with a differentiable model predictive control (MPC) controller in CrowdNav pedestrian
+    scenarios. In the open-loop setting, DiffGM3 outperforms DiffKBM in reproducing trajectories with improvements
+    in ADE and NLL across bicycle, scooter, and motorcycle modes, and reductions in planning loss for bicycle and
+    motorcycle trajectories. We also find that, in closed-loop settings, DiffGM3 improves on DiffKBM's CrowdNav
+    performance by producing 55% fewer collisions and a 75% lower discomfort frequency for the bicycle mode.
+
+- title: "GM3: A General Physical Model for Micro-Mobility Vehicles"
+  authors:
+    - name: Grace Cai
+      me: true
+      equal: true
+    - name: Nithin Parepally
+      url: https://www.linkedin.com/in/nithin-parepally-48b40a242/
+      equal: true
+    - name: Laura Zheng
+      url: https://laurayuzheng.github.io/
+    - name: Ming C. Lin
+      url: https://www.cs.umd.edu/~lin/
+  venue: IEEE International Conference on Robotics and Automation (ICRA)
+  venue_short: ICRA 2026
+  year: 2026
+  image: /assets/images/pubs/gm3.png
+  links:
+    - name: Project Page
+      url: https://gm3-sim.github.io/gm3/
+    - name: Paper
+      url: https://gm3-sim.github.io/gm3/GM3_Final.pdf
+    - name: arXiv
+      url: https://arxiv.org/abs/2510.07807
+    - name: Video
+      url: https://youtu.be/GV_J_Sh1Oxw
+    - name: Poster
+      url: https://gm3-sim.github.io/gm3/GM3_Poster_Final.pdf
+  abstract: >-
+    Modeling the dynamics of micro-mobility vehicles (MMV) is becoming increasingly important for training
+    autonomous vehicle systems and building urban traffic simulations. However, mainstream tools rely on variants of
+    the Kinematic Bicycle Model (KBM) or mode-specific physics that miss tire slip, load transfer, and rider/vehicle
+    lean. To our knowledge, no unified, physics-based model captures these dynamics across the full range of common
+    MMVs and wheel layouts. We propose the "Generalized Micro-mobility Model" (GM3), a tire-level formulation based
+    on the tire brush representation that supports arbitrary wheel configurations, including single/double track
+    and multi-wheel platforms. We introduce an interactive model-agnostic evaluation and visualization framework
+    that decouples vehicle/layout specification from dynamics to compare the GM3 with the KBM and other models,
+    consisting of fixed step RK4 integration, human-in-the-loop and scripted control, real-time trajectory traces,
+    and logging for analysis. We also empirically validate the GM3 on the Stanford Drone Dataset's deathCircle
+    (roundabout) scene for biker, skater, and cart classes.

@@ -1,7 +1,7 @@
 @charset "utf-8";
 
 // Custom Fonts
-@import url('https://fonts.googleapis.com/css?family=Poppins');
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,400i,600,700');
 
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import "variables",
@@ -16,4 +16,5 @@
         "timeline",
         "autumn",
         "theme",
-        "theme-dark";
+        "theme-dark",
+        "research";

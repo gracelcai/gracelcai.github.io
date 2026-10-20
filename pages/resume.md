@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Resume
-external_url: /assets/resume.pdf
+title: CV
+external_url: /assets/cv.pdf
 weight: 2
 ---

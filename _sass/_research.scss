@@ -1,0 +1,171 @@
+// Research-oriented home page
+
+.research-home {
+  font-size: 1rem;
+  line-height: 1.65;
+
+  a {
+    color: darken($primary, 12%);
+    @include themed(color, darken($primary, 14%), lighten($primary, 6%));
+  }
+}
+
+.profile-photo {
+  width: 100%;
+  max-width: 220px;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.home-name {
+  font-weight: 600;
+  margin-bottom: 0.1rem;
+}
+
+.home-role {
+  font-size: 1.05rem;
+  margin-bottom: 1rem;
+}
+
+.phd-callout {
+  display: inline-block;
+  padding: 0.35rem 0.8rem;
+  border-left: 4px solid $primary;
+  border-radius: 4px;
+  font-weight: 600;
+  @include themed(background-color, rgba($primary, 0.12), rgba($primary, 0.18));
+}
+
+.home-links a {
+  margin-right: 1.25rem;
+  white-space: nowrap;
+
+  i {
+    margin-right: 0.25rem;
+  }
+}
+
+.research-section {
+  margin-top: 3rem;
+}
+
+.section-title {
+  font-size: 1.6rem;
+  font-weight: 600;
+  padding-bottom: 0.4rem;
+  margin-bottom: 1.25rem;
+  @include themed(border-bottom, 1px solid rgba($text-black, 0.15), 1px solid rgba(white, 0.15));
+}
+
+.section-note {
+  font-size: 0.85rem;
+  margin-top: -0.75rem;
+}
+
+// Publications
+
+.pub {
+  padding: 1.25rem 0;
+
+  & + .pub {
+    @include themed(border-top, 1px dashed rgba($text-black, 0.12), 1px dashed rgba(white, 0.12));
+  }
+}
+
+.pub-thumb {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  padding: 0.25rem;
+  background-color: white;
+  @include themed(border, 1px solid rgba($text-black, 0.12), 1px solid rgba(white, 0.12));
+}
+
+.pub-venue-badge {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  padding: 0.1rem 0.55rem;
+  border-radius: 999px;
+  color: white;
+  background-color: $primary;
+  margin-bottom: 0.4rem;
+}
+
+.pub-title {
+  font-size: 1.15rem;
+  font-weight: 600;
+  line-height: 1.35;
+  margin-bottom: 0.3rem;
+
+  .research-home & a {
+    @include themed(color, $text-black, $text-white);
+  }
+}
+
+.pub-authors,
+.pub-venue,
+.pub-links {
+  margin-bottom: 0.2rem;
+}
+
+.pub-links {
+  font-weight: 600;
+  margin-top: 0.3rem;
+}
+
+.pub-abstract {
+  font-size: 0.9rem;
+  line-height: 1.55;
+  margin-top: 0.6rem;
+  margin-bottom: 0;
+  @include themed(color, rgba($text-black, 0.8), rgba(white, 0.72));
+}
+
+// Experience / projects
+
+.cv-item {
+  margin-bottom: 1.1rem;
+
+  p {
+    margin-bottom: 0;
+  }
+}
+
+.cv-item-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+}
+
+.cv-item-title {
+  font-weight: 600;
+}
+
+.cv-item-org {
+  margin-left: 0.3rem;
+}
+
+.cv-item-date {
+  margin-left: auto;
+  padding-left: 1rem;
+  font-size: 0.9rem;
+}
+
+.cv-item-desc {
+  font-size: 0.95rem;
+}
+
+.awards-list {
+  list-style: none;
+  padding-left: 0;
+
+  li {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-bottom: 0.35rem;
+  }
+}
