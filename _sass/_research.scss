@@ -116,14 +116,6 @@
   margin-top: 0.3rem;
 }
 
-.pub-abstract {
-  font-size: 0.9rem;
-  line-height: 1.55;
-  margin-top: 0.6rem;
-  margin-bottom: 0;
-  @include themed(color, rgba($text-black, 0.8), rgba(white, 0.72));
-}
-
 // Experience / projects
 
 .cv-item {
